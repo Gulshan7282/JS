@@ -40,10 +40,48 @@ const myFunction = function() {
     console.log("Hello World");
 }
 
-console.log(typeof outsideTemp); 
-console.log(typeof binNumber);
-console.log(typeof scoreValue);
+// console.log(typeof outsideTemp); 
+// console.log(typeof binNumber);
+// console.log(typeof scoreValue);
 
-console.log(typeof myFunction);
-console.log(typeof myObj);
+// console.log(typeof myFunction);
+// console.log(typeof myObj);
 
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory in Javascript 
+
+//1st Stack (use for Primitive ) // Stack work on copy of the variable 
+//2nd Heap (use for Non-Primitive ) // Heap work on reference of the vaiable
+// stack ke aander humesha kise chize ka copy milta hai
+// heap ke aander humesha kise bhi chize ka reference milta hai
+
+
+
+//STACK 
+let address = "Indian"
+
+let anotherAddress = address
+console.log(anotherAddress);
+
+anotherAddress = "Bharath"
+
+console.log(address);
+console.log(anotherAddress);
+
+
+//HEAP
+
+let userOne = {
+    email : "userone@gmail.com",
+    upi : "upi@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "user@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
