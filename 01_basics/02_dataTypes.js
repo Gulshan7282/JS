@@ -10,7 +10,7 @@ let number = 18;
 let boolen = true
 
 //number => 2 to power 53
-//binint
+//bigint
 //string
 //boolean => true/false
 //null =>standlone value
